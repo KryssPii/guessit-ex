@@ -14,7 +14,11 @@ const DATABASE_URL = 'postgresql://guessit:change-me-now@localhost:5432/guessit'
 
 // The colour used for the page's accent (buttons, title). Change it if you
 // like a different look.
+<<<<<<< HEAD
 const ACCENT_COLOR = '#0009a6';
+=======
+const ACCENT_COLOR = '#8d76c9';
+>>>>>>> fee5913ee6016bd279d7f1da6e614590a4781707
 
 // How long a game stays playable after it is created. Once it is older than
 // this, the game can no longer be viewed, guessed or given up. See "Game
