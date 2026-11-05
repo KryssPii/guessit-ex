@@ -16,9 +16,11 @@
 --
 --   postgresql://guessit:pass%20word@localhost:5432/guessit
 
-CREATE USER guessit WITH PASSWORD 'guessit123';
+CREATE USER superguessit
+WITH
+    PASSWORD '4ed13e008498a677547acdb8dbad5702';
 
-CREATE DATABASE guessit OWNER guessit;
+CREATE DATABASE guessit OWNER superguessit;
 
 -- Connect to the new database before creating the table in it.
 \connect guessit
@@ -29,7 +31,7 @@ CREATE TABLE game (
     secret INTEGER NOT NULL,
     attempts INTEGER NOT NULL DEFAULT 0,
     found_at TIMESTAMPTZ,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW ()
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-ALTER TABLE game OWNER TO guessit;
+ALTER TABLE game OWNER TO superguessit;
