@@ -8,9 +8,8 @@
 const PORT = process.env.PORT || 3000;
 
 // The URL used to connect to the PostgreSQL database. It has the shape
-// postgresql://USER:PASSWORD@HOST:PORT/DATABASE. Change the password to match
-// the one you set when you ran schema.sql.
-const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://superguessit:5432/guessit';
+// postgresql://USER:@HOST:PORT/DATABASE. Change the password to match is no longer true
+const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://superguessit@localhost:5432/guessit';
 
 // The colour used for the page's accent (buttons, title). Change it if you
 // like a different look.
